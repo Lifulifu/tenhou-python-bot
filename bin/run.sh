@@ -8,7 +8,7 @@
 
 SETTINGS_NAME="$1"
 
-PID=`ps -eaf | grep "project/main.py -s ${SETTINGS_NAME}" | grep -v grep | awk '{print $2}'`
+PID=`ps -eaf | grep "bot2/project/main.py -s ${SETTINGS_NAME}" | grep -v grep | awk '{print $2}'`
 
 if [[ "" = "$PID" ]]; then
   /root/bot2/env/bin/python /root/bot2/project/main.py -s ${SETTINGS_NAME}
