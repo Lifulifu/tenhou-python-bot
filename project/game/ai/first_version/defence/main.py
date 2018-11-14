@@ -39,6 +39,8 @@ class DefenceHandler(object):
         :return: true|false
         """
 
+        return False
+
         # we drew a tile, so we have 14 tiles in our hand
         if discard_candidate:
             shanten = discard_candidate.shanten
